@@ -1,3 +1,4 @@
+
 #Quizz over een vluchtelling.
 import time
 print("Welkom bij de quizz waar je in de positie van een vluchtelling zit, Je gaat hier multiple choise vragen beantwoorden.")
@@ -5,6 +6,33 @@ time.sleep(3)
 print("Je bent een vluchtelling in syrie die de optie krijgt om te vluchten van de oorlog naar een veilig land het is aan jou of je dat ook  gaat doen")
 
 #vragen 
+def vraag3(): 
+    print("Vind jij het een goed dat je broer zijn bestevriend wilt mee nemen?")  
+    print("a = Ja goed idee!")  
+    print("b = Nee de broer mag niet mee")
+    antwoord3 = input()
+    if antwoord3.lower == "a":
+        print("Je gaat samen vluchten met je broer en zijn bestevriend")
+        time.sleep(1)
+        print(vraag4())
+    elif antwoord4.lower() == "b":
+        print("De beste vriend mag niet mee je broer wilt ook niet mee, je gaat nu alleen vluchten")
+
+
+def vraag2(): 
+    print("Met wie wil je gaan vluchten?")
+    print("a = Broer")
+    print("b = Beste vriendin")
+    print("c = Moeder")
+    antwoord2 = input() 
+    if antwoord2.lower() == "a":
+        print("Je hebt gekozen om met je broer te vluchten, je broer wilt zijn bestevriend mee nemen. \n")
+        time.sleep(2)
+        print(vraag3())
+    elif antwoord2.lower() == "b":
+        print("je beste vriendin wilt niet mee vluchten")
+        print(vraag4())        
+
 
 def vraag1():
     print("Wil je gaan vluchten?")
@@ -14,8 +42,8 @@ def vraag1():
     antwoord1 = input()
     if antwoord1.lower() == "a": 
         print("Je hebt gekozen om te vluchten.\n") 
-        time.sleep(1.0)
-        print(vraag3())
+        time.sleep(1)
+        print(vraag2())
     elif antwoord1.lower() == "b": 
         print("Je kiest ervoor om niet te gaan vluchten hierdoor ga je dood.")
         time.sleep(1)
@@ -26,22 +54,6 @@ def vraag1():
         print(vraag2())
     else:
         print("Kies a, b, c")
-        print(vraag1())
-
-
-
-
-#vraag 2 
-print("vraag 2")
-answer2 = input ("Met wie wil je gaan vluchten? \n a. Broer \n b. Beste vriendin \n c. Moeder \n Answer: ")
-if answer2 == "a" or answer2 == "Broer":
-    print ("je hebt gekozen om te gaan vluchten met je broer, de beste vriend van je broer wilt mee ")
-
-#vraag2.1
-print("vraag 2.1")
-answer2.1 = input("De beste vriend van je broer wilt meegaan, vind jij het dat ook een goed idee? \n a. ja \n b. nee \n Answer:")
-if answer2.1 == "a" or answer2
-
-
+print(vraag1())
 
 
