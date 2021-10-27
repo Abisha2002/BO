@@ -6,6 +6,7 @@ time.sleep(3)
 print("Je bent een vluchtelling in syrie die de optie krijgt om te vluchten van de oorlog naar een veilig land het is aan jou of je dat ook  gaat doen")
 
 #vragen 
+#Vraag 13,14,15 moeten nog gemaakt worden. 
 
 def vraag23():
     print(" De boot waar je nu op zit gaat naar nederland!")
@@ -15,6 +16,7 @@ def vraag23():
     antwoord = input()
     if antwoord.lower() == "a": #win 
         print("Je hebt het behaald! je bent veilig aangekomen in nederland!")
+        print("Bedankt voor het spelen")
     elif antwoord.lower() == "b": #einde
         print("Aangezien je echt niet naar nederland wilt vluchten, spring je van de boot")
         print("Je vlucht eindigd hier")
