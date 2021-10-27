@@ -6,6 +6,56 @@ time.sleep(3)
 print("Je bent een vluchtelling in syrie die de optie krijgt om te vluchten van de oorlog naar een veilig land het is aan jou of je dat ook  gaat doen")
 
 #vragen 
+def vraag18():#moeder
+    print("Er is een tassencontrole, hierbij word je mes ontdekt in je tas.\n ")
+    print("Je word mee genomen naar het bureau, je vlucht eindigt hier.\n")
+    print("Probeer opnieuw te spelen!.\n")
+    time.sleep(5)
+    vraag1()
+
+def vraag22():
+    print("Wil je opnieuw spelen?")
+    print("a = Ja ")
+    print("b = Nee ")
+    antwoord = input()
+    if antwoord.lower() == "a":
+        vraag1()
+    elif antwoord.lower() == "b":
+        print("Bedankt voor het spelen!")
+
+def vraag21():
+    print("TEST")
+    print("TEST")
+    antwoord15 = input()
+    if antwoord15.lower() == "a":
+        print("aaa")
+    elif antwoord15.lower() == "b":
+        print("bbb")
+
+
+def vraag20(): # telefoon met contactgegevens. 
+    print("TEST")
+    print("TEST")
+    antwoord15 = input()
+    if antwoord15.lower() == "a":
+        print("aaa")
+    elif antwoord15.lower() == "b":
+        print("bbb")
+
+
+def vraag19(): # je hebt voedsel gestolen van iemand op de boot. 
+    print("Degene waar je voedsel van hebt gestolen heeft niks door dus dit is de manier hoe je gaat overleven.")
+    print("Er is een optie om over te stappen op een groter boot, ga je dit doen?")
+    print("a = Ja ik stap over")
+    print("b = Nee ik blijf op de boot")    
+    antwoord15 = input()
+    if antwoord15.lower() == "a":
+        print("dit is de juiste keuze want de oude boot is gezonken")
+    elif antwoord15.lower() == "b":
+        print("Je koos ervoor om niet te gaan overstappen helaas is de boot waar je nu op zit gezonken.\n")
+        print("Je vlucht eindigt hier, wil je opnieuw spelen?")
+
+
 def vraag18(): #Richting de einde waar bij controle door de politie een mes word gevonden. #moeder
     print("Er is een tassencontrole, hierbij word je mes ontdekt in je tas.\n ")
     print("Je word mee genomen naar het bureau, je vlucht eindigt hier.\n")
@@ -14,47 +64,7 @@ def vraag18(): #Richting de einde waar bij controle door de politie een mes word
     vraag1()
 
 
-#def vraag21():
-    print("TEST")
-    print("TEST")
-    antwoord15 = input()
-    if antwoord15.lower() == "a":
-        print("aaa")
-    elif antwoord15.lower() == "b":
-        print("bbb")
-
-
-#def vraag20(): # telefoon met contactgegevens. 
-    print("TEST")
-    print("TEST")
-    antwoord15 = input()
-    if antwoord15.lower() == "a":
-        print("aaa")
-    elif antwoord15.lower() == "b":
-        print("bbb")
-
-
-#def vraag19(): # je hebt voedsel gestolen van iemand op de boot. 
-    print("TEST")
-    print("TEST")
-    antwoord15 = input()
-    if antwoord15.lower() == "a":
-        print("aaa")
-    elif antwoord15.lower() == "b":
-        print("bbb")
-
-
-#def vraag18():
-    print("TEST")
-    print("TEST")
-    antwoord15 = input()
-    if antwoord15.lower() == "a":
-        print("aaa")
-    elif antwoord15.lower() == "b":
-        print("bbb")
-
-
-def vraag17():
+#def vraag17():
     print("Wat wil je mee nemen?")
     print("a = Foto's van vroeger ")
     print("b = Telefoon met contactgegevens van je famillie")
@@ -68,7 +78,7 @@ def vraag17():
 
 def vraag16(): #boot
     print("Je ziet dat er iemand is overleden op de boot en dat mensen op de boot het vlees van die mens op eten.")
-    print("Langzamerhand krijg jij ook honger, wat doe je?")
+    print("Langzamerhand krijg jij ook honger, wat doe je?\n")
     print("a = Niks eten want je hebt niks bij je")
     print("b = Je gaat de vlees van de overleden persoon eten.")
     print("c = Je steelt voedsel van een ander op de boot ")
@@ -88,7 +98,16 @@ def vraag16(): #boot
         vraag19() 
 
 
-#def vraag15():
+def vraag15(): #jullie gaan vluchten naar griekenland
+    print("TEST")
+    print("TEST")
+    antwoord15 = input()
+    if antwoord15.lower() == "a":
+        print("aaa")
+    elif antwoord15.lower() == "b":
+        print("bbb")
+
+def vraag14(): #jullie gaan vluchten naar canada 
     print("TEST")
     print("TEST")
     antwoord15 = input()
@@ -98,17 +117,7 @@ def vraag16(): #boot
         print("bbb")
 
 
-#def vraag14():
-    print("TEST")
-    print("TEST")
-    antwoord15 = input()
-    if antwoord15.lower() == "a":
-        print("aaa")
-    elif antwoord15.lower() == "b":
-        print("bbb")
-
-
-#def vraag13():
+def vraag13(): #jullie willen vluchten naar nederland
     print("TEST")
     print("TEST")
     antwoord13 = input()
@@ -118,15 +127,18 @@ def vraag16(): #boot
         print("bbb")
 
 
-#def vraag12():
+def vraag12():
     print("Iemand op de boot wilt je telefoon lenen om te bellen naar zijn famille")
     print("a = Hij mag de telefoon gebruiken")
     print("Je belt eerst naar jouwn eigen famillie en daarna mag hij bellen.")
     antwoord = input()
     if antwoord.lower() == "a":
-        vraag ()
+        print("Degene aan wie je de telefoon gaf heeft een crimineel gebeld, tijdens een controle word jij er mee gepakt.")
+        print("Je moet nu mee naar het bureau hierdoor eindigt je vlucht\n")
+        vraag22()
     elif antwoord.lower()  == "b":
-        vraag ()
+        print("Je telefoon explodeerd hierdoor ga je dood en eindigt je vlucht hier.")
+        vraag22()
 
 
 def vraag11():
@@ -137,10 +149,10 @@ def vraag11():
     print("wil je opnieuw spelen?")
     print("a = Ja")
     print("b = nee ")
-    antwoord11 = input()
-    if antwoord11.lower() == "a":
+    antwoord = input()
+    if antwoord.lower() == "a":
         vraag1()
-    elif antwoord11.lower() == "b":
+    elif antwoord.lower() == "b":
         print("Bedankt voor het spelen!")
 
 
@@ -148,11 +160,11 @@ def vraag10():
     print("weet je zeker dat je een mes wilt mee nemen?")
     print("a = Ja")
     print("b = nee ")
-    antwood10 = input()
-    if antwood10.lower() == "a":
+    antwoord = input()
+    if antwoord.lower() == "a":
         print("dit is geen veilig keuze")
         vraag18()
-    elif antwood10.lower() == "b":
+    elif antwoord.lower() == "b":
         vraag17() #done
 
 
@@ -162,14 +174,14 @@ def vraag9():
     print("a = Rood")
     print("b = Groen")
     print("c = bruin")
-    antwoord9 = input()
-    if antwoord9.lower() == "a":
+    antwoord = input()
+    if antwoord.lower() == "a":
         print("Deze container is dicht, probeer een ander!")
         vraag9() #done
-    elif antwoord9.lower() == "b":
+    elif antwoord.lower() == "b":
         print("Deze container is open!")
         vraag21() #done
-    elif antwoord9.lower() == "c":
+    elif antwoord.lower() == "c":
         print("Deze container is dicht, probeer een ander!")
         vraag9() #done
 
@@ -182,7 +194,7 @@ def vraag8():
     if antwoord.lower() == "a":
         print("De route met de boot duurt lang, je moet eten mee nemen")
         vraag7()
-    elif antwoord.lower() == "b":
+    elif antwoord.lower() == "b": #vracht
         print("Je wilt gaan vluchten via vracht")
         vraag9()
 
@@ -203,7 +215,7 @@ def vraag7(): #boot
         vraag16()
 
 
-def vraag6():
+def vraag6(): #broer en bestevriend.
     print("Waar willen jullie heen vluchten met ze 3en?")
     print("a = Nederland")
     print("b = Canada")
@@ -236,7 +248,7 @@ def vraag5(): #moeder
         vraag12()      
 
 
-def vraag4():
+def vraag4(): #alleen
     print("Via welke route wil je gaan vluchten?")
     print("a = Boot")
     print("b = Vliegtuig")
@@ -249,7 +261,7 @@ def vraag4():
     elif antwoord.lower() == "b":
         print("Je hebt geen geldig paspoort! hierdoor kom je nooit door de douane heen, kies een andere route!")
         vraag8()
-    elif antwoord.lower() == "c":
+    elif antwoord.lower() == "c": #vracht
         print("Je wilt gaan vluchten via vracht.")
         vraag9()
 
@@ -260,7 +272,7 @@ def vraag3():
     print("b = Nee de broer mag niet mee")
     antwoord = input()
     if antwoord.lower() == "a":
-        print("Je gaat samen vluchten met je broer en zijn bestevriend.\n")
+        print("Je gaat samen vluchten met je broer en zijn bestevriend via een boot.\n")
         vraag6()
     elif antwoord.lower() == "b":
         print("De beste vriend mag niet mee je broer wilt ook niet mee, je gaat nu alleen vluchten")
