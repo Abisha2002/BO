@@ -14,7 +14,7 @@ def vraag18(): #Richting de einde waar bij controle door de politie een mes word
     vraag1()
 
 
-def vraag21():
+#def vraag21():
     print("TEST")
     print("TEST")
     antwoord15 = input()
@@ -24,7 +24,7 @@ def vraag21():
         print("bbb")
 
 
-def vraag20(): # telefoon met contactgegevens. 
+#def vraag20(): # telefoon met contactgegevens. 
     print("TEST")
     print("TEST")
     antwoord15 = input()
@@ -34,7 +34,7 @@ def vraag20(): # telefoon met contactgegevens.
         print("bbb")
 
 
-def vraag19(): # je hebt voedsel gestolen van iemand op de boot. 
+#def vraag19(): # je hebt voedsel gestolen van iemand op de boot. 
     print("TEST")
     print("TEST")
     antwoord15 = input()
@@ -44,7 +44,7 @@ def vraag19(): # je hebt voedsel gestolen van iemand op de boot.
         print("bbb")
 
 
-def vraag18():
+#def vraag18():
     print("TEST")
     print("TEST")
     antwoord15 = input()
@@ -88,7 +88,7 @@ def vraag16(): #boot
         vraag19() 
 
 
-def vraag15():
+#def vraag15():
     print("TEST")
     print("TEST")
     antwoord15 = input()
@@ -98,7 +98,7 @@ def vraag15():
         print("bbb")
 
 
-def vraag14():
+#def vraag14():
     print("TEST")
     print("TEST")
     antwoord15 = input()
@@ -108,7 +108,7 @@ def vraag14():
         print("bbb")
 
 
-def vraag13():
+#def vraag13():
     print("TEST")
     print("TEST")
     antwoord13 = input()
@@ -118,24 +118,30 @@ def vraag13():
         print("bbb")
 
 
-def vraag12():
-    print("TEST")
-    print("TEST")
-    antwoord12 = input()
-    if antwoord12.lower() == "a":
-        print("aaa")
-    elif antwoord12.lower()  == "b":
-        print("bbb")
+#def vraag12():
+    print("Iemand op de boot wilt je telefoon lenen om te bellen naar zijn famille")
+    print("a = Hij mag de telefoon gebruiken")
+    print("Je belt eerst naar jouwn eigen famillie en daarna mag hij bellen.")
+    antwoord = input()
+    if antwoord.lower() == "a":
+        vraag ()
+    elif antwoord.lower()  == "b":
+        vraag ()
 
 
 def vraag11():
-    print("TEST")
-    print("TEST")
+    print("Je tas word doorgezocht tijdens een controle. \n")
+    print("Op 1 van de fotos die je bij je hebt staat iemand op die in de gevangenis zit voor het stelen van een auto. \n")
+    print("Jij word nu verdacht, je word mee genomen naar het bureau hierdoor eindigt je vlucht hier. \n")
+    time.sleep(5)
+    print("wil je opnieuw spelen?")
+    print("a = Ja")
+    print("b = nee ")
     antwoord11 = input()
     if antwoord11.lower() == "a":
-        print("aaa")
+        vraag1()
     elif antwoord11.lower() == "b":
-        print("bbb")
+        print("Bedankt voor het spelen!")
 
 
 def vraag10(): 
@@ -145,9 +151,9 @@ def vraag10():
     antwood10 = input()
     if antwood10.lower() == "a":
         print("dit is geen veilig keuze")
-        vraag18() # Richting de einde waar bij controle door de politie een mes word gevonden.
+        vraag18()
     elif antwood10.lower() == "b":
-        vraag17()
+        vraag17() #done
 
 
 def vraag9():
@@ -224,10 +230,9 @@ def vraag5(): #moeder
     if antwoord.lower() == "a":
         vraag10()
     elif antwoord.lower() == "b":
-        print("Dit is een veilige keuze, dit zal geen kwaad doen bij controles.")
+        print("Je hebt ervoor gekozen om foto's mee te nemen.")
         vraag11()
     elif antwoord.lower() == "c":
-        print("Dit is een veilige keuze")
         vraag12()      
 
 
