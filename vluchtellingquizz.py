@@ -6,7 +6,7 @@ time.sleep(3)
 print("Je bent een vluchtelling in syrie die de optie krijgt om te vluchten van de oorlog naar een veilig land het is aan jou of je dat ook  gaat doen")
 
 #vragen 
-#Vraag 13,14,15 moeten nog gemaakt worden. 
+#Vraag 14 moet nog gemaakt worden. 
 
 
 
@@ -126,12 +126,20 @@ def vraag16(): #boot
 
 def vraag15(): #jullie gaan vluchten naar griekenland
     print("Je komt bij de border aan van Griekenland en ziet dat er een strenge paspoortcontrole is. ")
-    print("TEST")
+    print("Wat ga je doen")
+    print(" a = Je gaat door de douane proberen te komen ookal heb je geen echte paspoort")
+    print("b = Je gaat je vervalsde paspoort gebruiken ")
     antwoord = input()
     if antwoord.lower() == "a":
-        print("aaa")
+        print("Tijdens de controle word je aangehouden omdat je geen paspoort bij je hebt en moet je mee naar het bureau")
+        print("Je vlucht eindigd hier!")
+        vraag22()
     elif antwoord.lower() == "b":
-        print("bbb")
+        print("Tijdens de paspoort controle gaf de machine aan dat je paspoort vervalsd is en moet je mee naar het bureau")
+        print("Je vlucht eindigd hier!")
+        vraag22()
+
+
 
 def vraag14(): #jullie gaan vluchten naar canada 
     print("TEST")
