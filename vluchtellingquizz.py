@@ -6,9 +6,6 @@ time.sleep(3)
 print("Je bent een vluchtelling in syrie die de optie krijgt om te vluchten van de oorlog naar een veilig land het is aan jou of je dat ook  gaat doen")
 
 #vragen 
-#Vraag 14 moet nog gemaakt worden. 
-
-
 
 def vraag23():
     print(" De boot waar je nu op zit gaat naar nederland!")
@@ -24,6 +21,7 @@ def vraag23():
         print("Je vlucht eindigd hier")
         vraag22()
 
+
 def vraag22():
     print("Wil je opnieuw spelen?")
     print("a = Ja ")
@@ -33,6 +31,7 @@ def vraag22():
         vraag1()
     elif antwoord.lower() == "b":
         print("Bedankt voor het spelen!")
+
 
 def vraag21(): #zandzakken
     print("Zodra de containers te veel bewegen kunnen de stapels zand op je vallen.")
@@ -126,7 +125,8 @@ def vraag16(): #boot
 
 def vraag15(): #jullie gaan vluchten naar griekenland
     print("Je komt bij de border aan van Griekenland en ziet dat er een strenge paspoortcontrole is. ")
-    print("Wat ga je doen")
+    time.sleep(1)
+    print("Wat ga je doen?")
     print(" a = Je gaat door de douane proberen te komen ookal heb je geen echte paspoort")
     print("b = Je gaat je vervalsde paspoort gebruiken ")
     antwoord = input()
@@ -142,13 +142,23 @@ def vraag15(): #jullie gaan vluchten naar griekenland
 
 
 def vraag14(): #jullie gaan vluchten naar canada 
-    print("TEST")
-    print("TEST")
+    print("Je bent aangekomen in canada, maar je kunt geen baan vinden.")
+    print("Je hebt honger en je ziet blauwe bessen in een bosje. Wat ga je doen?")
+    time.sleep(1)
+    print(" Wat ga je doen?")
+    print("a = Je eet van de Blauwe bessen.")
+    print("b = Je eet niet van de blauwe bessen.")
     antwoord = input()
     if antwoord.lower() == "a":
-        print("aaa")
+        print("Oh nee de bessen die je hebt gegeten waren giftige bessen! Je overlijd je aan voedselvergiftiging")
+        print("Hierdoor eindigd je vlucht.")
+        time.sleep(1)
+        vraag22()
+        
     elif antwoord.lower() == "b":
-        print("bbb")
+        print("Je overleid aan honger omdat je geen ander voedsel kon vinden")
+        print("Hierdoor eindigd je vlucht.")
+        vraag22()
 
 
 def vraag13(): #jullie willen vluchten naar nederland
@@ -244,7 +254,7 @@ def vraag7(): #boot
     print("b = Je hebt geen geld dus je gaat zonder eten op de boot stappen")
     antwoord = input()
     if antwoord.lower() == "a": #einde
-        print("Je word gepakt door de politie tijdens het stelen van voedsel! Je gaat hierdoor de gevangenis in hierbij eindigt je vlucht!")
+        print("Je word gepakt door de politie tijdens het stelen van voedsel! Je gaat hierdoor de gevangenis in hierbij eindigt je vlucht! \n")
         time.sleep(2)
         print("Probeer opnieuw te spelen!")
         vraag1()
