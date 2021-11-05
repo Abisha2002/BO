@@ -8,6 +8,8 @@ print("Je bent een vluchtelling in syrie die de optie krijgt om te vluchten van 
 #vragen 
 #Vraag 13,14,15 moeten nog gemaakt worden. 
 
+
+
 def vraag23():
     print(" De boot waar je nu op zit gaat naar nederland!")
     print("Wil je naar nederland vluchten?")
@@ -72,11 +74,11 @@ def vraag19(): # je hebt voedsel gestolen van iemand op de boot.
     print("Er is een optie om over te stappen op een groter boot, ga je dit doen?")
     print("a = Ja ik stap over")
     print("b = Nee ik blijf op de boot")    
-    antwoord15 = input()
-    if antwoord15.lower() == "a":
+    antwoord = input()
+    if antwoord.lower() == "a":
         print("dit is de juiste keuze want de oude boot is gezonken")
         vraag23()
-    elif antwoord15.lower() == "b": #einde
+    elif antwoord.lower() == "b": #einde
         print("Je koos ervoor om niet te gaan overstappen helaas is de boot waar je nu op zit gezonken.\n")
         print("Je vlucht eindigt hier")
         vraag22()
@@ -123,12 +125,12 @@ def vraag16(): #boot
 
 
 def vraag15(): #jullie gaan vluchten naar griekenland
+    print("Je komt bij de border aan van Griekenland en ziet dat er een strenge paspoortcontrole is. ")
     print("TEST")
-    print("TEST")
-    antwoord15 = input()
-    if antwoord15.lower() == "a":
+    antwoord = input()
+    if antwoord.lower() == "a":
         print("aaa")
-    elif antwoord15.lower() == "b":
+    elif antwoord.lower() == "b":
         print("bbb")
 
 def vraag14(): #jullie gaan vluchten naar canada 
@@ -142,14 +144,19 @@ def vraag14(): #jullie gaan vluchten naar canada
 
 
 def vraag13(): #jullie willen vluchten naar nederland
-    print("TEST")
-    print("TEST")
+    print("Je hebt geen idee wat voor seizoen het was in Nederland")
+    print("Wat voor kleding heb je meegenomen?")
+    time.sleep(1)
+    print("a = Zomerkleding")
+    print("b = Winterkleding")
     antwoord = input()
-    if antwoord.lower() == "a":
-        print("aaa")
-    elif antwoord.lower() == "b":
-        print("bbb")
-
+    if antwoord.lower() == "a": #einde
+        print("Je hebt gekozen voor zomerkleding maar het is -5 in Nederland waardoor je doodvriest. ")
+    elif antwoord.lower() == "b": #win
+        print("Dat is handig want het is -5 in Nederland!")
+        print("Het is je gelukt om te vluchten uit nederland!, hierbij heb je het spel uitgespeeld. ")
+        vraag22() 
+        
 
 def vraag12(): #einde
     print("Iemand op de boot wilt je telefoon lenen om te bellen naar zijn famille")
